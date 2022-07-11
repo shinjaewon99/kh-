@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>폼 관련 태그</title>
+    </head>
+
+
+    <body>
+        <h1> 기본폼 양식</h1>
+        <form action="server/location" method="GET">
+            <fieldset>
+                <legend>입력</legend>
+
+                <input type="text" name ="val">
+                <button type ="submit">전송</button>
+            </fieldset>
+        </form>
+        
+        <h1> 폼과 입력 양식 분리</h1>
+        <form id= "f2" action="server/location" method="GET"> </form>
+       
+      
+            <fieldset >
+                <legend>입력</legend>
+
+                <input type="text" name ="val"form="f2">
+                <button type ="submit" form="f2">Form 2 전송</button>
+                
+            </fieldset>
+            <form id= "f3" action="/server/location" method="GET"> 
+                <input type="text" name ="val">
+            </form>  
+            <button type ="submit" >Form 3 전송</button>
+
+            <h1>input 태그</h1>
+            <form action="/server/loacation4" method="GET">
+
+            <div>
+                텍스트 입력 : <input type="text" name ="v1" value="data1" minlength="2" maxlength="8"
+                size = "5 " placeholder="텍스트 입력" required >
+
+            </div>
+
+            <div>
+                패스워드 입력 : <input type ="password" name ="v2" name ="v2" value="data2" minlength="2" maxlength="8"
+                size = "8 " placeholder="암호 입력" required>
+            </div>
+            <div>
+                입력 숨김 : <input type ="hidden" name ="v3" value="date3">
+            </div>
+            <div>
+                체크박스 : <input type ="checkbox"> <input type="checkbox"> <input type="checkbox">
+            </div>
+            <div>
+                라디오버튼 : <input type ="radio"> 라디오버튼 : <input type ="radio"> 라디오버튼 : <input type ="radio">
+            </div>
+
+            <div>
+                각종버튼 : <input type = "button" value="버튼"> <input type ="submit" value="전송">
+                <input type ="reset" value="초기화">  
+            </div>
+
+            <div>
+                이미지 : <input type = "image" src = "/static/icon/default.png">
+
+            </div>
+            <div>
+                파일 선택 : <input type="file">
+
+            </div>
+            <div>
+                색 선택 : <input type ="color">
+            </div>
+
+            <div>
+                날짜 입력 : <input type="date">
+
+            </div>
+
+            <div>
+                시간 입력 : <input type="time"> 
+            </div>
+
+            <div>
+                이메일 입력 : <input type ="email">
+            </div>
+            <div >
+                슬라이드바 : <input type ="range">
+            </div>
+        </form>
+    </body>
+</html>
