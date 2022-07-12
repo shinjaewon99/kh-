@@ -1,0 +1,41 @@
+
+
+[class *=input]:active{
+    background-color: yellowgreen;
+}
+
+[class*=input]:hover{
+    background-color: yellow;
+}
+
+[type = checkbox]:checked{
+    box-shadow: 0 0 0 2px red;
+}
+
+#remember:checked+label{
+    color: red;
+}
+
+input:focus{
+    border-color: lightblue;
+    border-width: 4px;
+}
+
+input:enabled{
+    background-color: gainsboro;
+}
+input:disabled{
+    background-color: black;
+}
+:link{
+    color: cornflowerblue;
+
+}
+:visited{
+color :crimson;
+
+}
+
+tr:first-child{
+font-weight: bold;
+}

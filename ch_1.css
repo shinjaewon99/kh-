@@ -1,0 +1,15 @@
+*{
+    font-size: 24px;
+    margin: 0; /*외부여백*/
+    padding: 0; /* 내부여백*/
+
+    /* 모든 요소가 공통된 스타일 속성이 필요한 경우 사용*/
+
+
+    
+}
+
+
+#first{
+    background-color: firebrick;
+}
