@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title> 글자 관련 스타일</title>
+        <style>
+            .font1{
+                font-family:'돋움체', '맑은 고딕' , '궁서체';
+            }
+
+            .font2{
+                font: 700 24px 'Courier New' , Courier,monospace;
+                color: rgb(255,0,0);
+                text-shadow: 10px 10px 5px black 5px 5px 5px blue;
+            }
+            .para-style{
+                text-align: left;
+                text-indent: 4em;
+                line-height: 2em;
+                white-space: nowrap;
+                width: 150px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .list-style > ol{
+                list-style-type: lower-alpha;
+                list-style-position: outside;
+                background-color: antiquewhite;
+            }
+            .list-style>ul{
+                list-style-position: inside;
+                background-color: antiquewhite;
+                list-style: square;
+                border: 10px dotted
+            }
+            .content-style>div{
+                background-color: cornflowerblue;
+            }
+            .content-style>div{
+                background-color: antiquewhite;
+                display: inline-block;
+                width: 80px; height: 50px;
+                border: 5px solid red;
+                padding: 5px;
+                margin: 5px;
+                box-sizing: border-box;
+            }
+
+            .round-border > div{
+                display:inline-block;
+                border: 1px solid red;
+                padding: 4px;
+                border-radius: 8px 8px 0 0;
+                box-shadow: 4px 4px 5px 4px red;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <section>
+        <h1>글자 관련 스타일</h1>
+        <article calss = "font1">
+            <h2>font-family</h2>
+            <p>사용자 화면에 표시할 글꼴 선택,
+                사용자 디바이스에 지정된 글꼴이 없는경우 브라우저 기본 글꼴로 표시
+            </p>
+        </article>
+        <article class ="font2">
+            <h2>font</h2>
+            <p>폰트 스타일들을 모아서 한번에 표현</p>
+
+
+        </article>
+  
+        <h1> 문단 관련 스타일</h1>
+        <article class = "para-style">
+            <p>문단 관련 스타일의 적용 유무를 확인하기 위한 영역
+
+            </p>
+        </article>
+        <h1>목록 관련스타일</h1>
+        <article class="lst-style">
+            <ol>
+                <li>목록1</li> <li>목록2</li> <li>목록3 : 목록에 들어가는 내용이 길때 불릿표기 차이를 확인</li>
+            </ol>
+            <ul>
+                <li>목록1</li> <li>목록2</li> <li>목록3 : 목록에 들어가는 내용이 길때 불릿표기 차이를 확인</li>
+            </ul>
+        </article>
+        <h1> 컨텐츠 영역 크기 </h1>
+
+        <article class="content-style">
+            <div> 컨텐츠 영역 </div>
+        </article>
+
+        <h1>둥근 테두리 </h1>
+        <article class="round-border">
+            <div> 테두리가 둥근 모양 </div>
+        </article>
+    </section>
+
+    </body>
+</html>
