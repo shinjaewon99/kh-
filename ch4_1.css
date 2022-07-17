@@ -1,0 +1,37 @@
+.side-menu{
+    list-style-type: none;
+    background-color: brown;
+
+    display: inline-block;
+    width: 200px;
+    margin: 0; padding: 0;
+}
+
+.menu-item{
+   
+    background-color: darkolivegreen;
+}
+
+.menu-item a{
+
+    box-sizing: border-box;
+   
+    display: block;
+     padding: 1em 2em;
+    text-decoration: none;
+    background-color: navy;
+    color: white;
+    font-weight: 700;
+
+}
+
+.menu-item a:hover{
+
+   background-color: white;
+   color: navy;
+
+}
+
+.menu-item .active a{
+    background-color: darkcyan;
+}
